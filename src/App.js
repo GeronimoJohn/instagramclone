@@ -177,21 +177,23 @@ function App() {
       </Modal>
 
       <div className="app__header">
-        <img
-          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-          alt=""
-          className="app__headerImage"
-        />
+        <div className="app__headerBox">
+          <img
+            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+            alt=""
+            className="app__headerImage"
+          />
 
-        {/* signup and logout button */}
-        {user ? (
-          <Button onClick={() => auth.signOut()}>Logout</Button>
-        ) : (
-          <div className="app__loginContainer">
-            <Button onClick={() => setOpenSignIn(true)}>Log In</Button>
-            <Button onClick={() => setOpen(true)}>Sign Up</Button>
-          </div>
-        )}
+          {/* signup and logout button */}
+          {user ? (
+            <Button onClick={() => auth.signOut()}>Logout</Button>
+          ) : (
+            <div className="app__loginContainer">
+              <Button onClick={() => setOpenSignIn(true)}>Log In</Button>
+              <Button onClick={() => setOpen(true)}>Sign Up</Button>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="app__posts">

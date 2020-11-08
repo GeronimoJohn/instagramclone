@@ -21,6 +21,12 @@
   background-color: white;
   padding: 20px;
   border-bottom: 1px solid lightgray;
+}
+
+.app__headerBox {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
   object-fit: contain;
   display: flex;
   justify-content: space-between;
