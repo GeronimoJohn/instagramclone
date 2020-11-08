@@ -88,6 +88,8 @@ function App() {
         });
       })
       .catch((error) => alert(error.message));
+
+    setOpen(false);
   };
 
   const signIn = (event) => {
