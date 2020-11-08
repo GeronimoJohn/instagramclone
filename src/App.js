@@ -102,6 +102,7 @@ function App() {
     setOpenSignIn(false);
   };
 
+  // main app
   return (
     <div className="app">
       <Modal open={open} onClose={() => setOpen(false)}>
